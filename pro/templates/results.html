@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #29ff30c6;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .result {
+            margin-bottom: 20px;
+        }
+        .result p {
+            margin-bottom: 10px;
+        }
+        img {
+            width: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results</h1>
+    <div class="result">
+        <p>Mean: {{ mean }}</p>
+        <p>Median: {{ median }}</p>
+        <p>Mode: {{ mode }}</p>
+        <p>Standard Deviation: {{ stddev }}</p>
+        <p>Quartile Deviation: {{ quartile_deviation }}</p>
+    </div>
+    <img src="{{ url_for('static', filename='bar_chart.png') }}" alt="Bar Chart">
+    <img src="{{ url_for('static', filename='line_chart.png') }}" alt="Line Chart">
+    <img src="{{ url_for('static', filename='histogram.png') }}" alt="Histogram">
+    <img src="{{ url_for('static', filename='scatter_plot.png') }}" alt="Scatter Plot">
+    <img src="{{ url_for('static', filename='box_plot.png') }}" alt="Box Plot">
+    <img src="{{ url_for('static', filename='pie_chart.png') }}" alt="Pie Chart">
+    <img src="{{ url_for('static', filename='heatmap.png') }}" alt="Heatmap">
+    <img src="{{ url_for('static', filename='pair_plot.png') }}" alt="Pair Plot">
+    <img src="{{ url_for('static', filename='x_chart.png') }}" alt="X-Chart">
+    <img src="{{ url_for('static', filename='p_chart.png') }}" alt="P-Chart">
+    <img src="{{ url_for('static', filename='r_chart.png') }}" alt="R-Chart">
+    <img src="{{ url_for('static', filename='c_chart.png') }}" alt="C-Chart">
+</body>
+</html>
